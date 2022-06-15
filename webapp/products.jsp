@@ -13,7 +13,9 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
 <script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js">
+	
+	</script>
 </head>
 
 <body>
@@ -24,7 +26,6 @@
 			<h1 class="display-3">상품 목록</h1>
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="row" align="center">
             <%
@@ -38,6 +39,7 @@
 					<p><%= product.getDescription() %></p>
 					<p><%= product.getUnitPrice() %>원</p>
 					<p><a href="product.jsp?id=<%= product.getId() %>" class="btn btn-secondary">상세 정보 &raquo;</a></p>
+			
 				</div>
 			<%
             }
